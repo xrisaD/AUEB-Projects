@@ -6,7 +6,7 @@ Run with command arguments: filter -f blur 10 Image05.ppm
 
 After Blur Filter:
 
-![alt text](img/blur.PNG))
+![alt text](img/blur.PNG)
 
 Run with command arguments: filter -f gamma 0.5 Image05.ppm
 
