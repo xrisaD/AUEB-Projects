@@ -1,0 +1,18 @@
+﻿  main.cpp
+c:\users\xrisa\desktop\filter\filter\filterblur.h(18): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+c:\users\xrisa\desktop\filter\filter\filterblur.h(23): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+c:\users\xrisa\desktop\filter\filter\main.cpp(68): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Generating code
+  294 of 408 functions (72.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    42 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  filter.vcxproj -> C:\Users\Xrisa\Desktop\filter\Release\filter.exe
