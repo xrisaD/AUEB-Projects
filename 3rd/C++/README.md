@@ -1,6 +1,6 @@
 Image Before:
 
-![alt text](3rd/C++/img/before.PNG)
+![alt text1](3rd/C++/img/before.PNG)
 
 Run with command arguments: filter -f blur 10 Image05.ppm
 After Blur Filter:
