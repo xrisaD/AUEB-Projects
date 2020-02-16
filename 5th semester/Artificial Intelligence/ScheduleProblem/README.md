@@ -1,6 +1,6 @@
 Main Idea(Clever Reproduce):
 <br>
-
+![alt text](newIntersectionPoints.PNG)
 ---
 Partners:
 <br>
