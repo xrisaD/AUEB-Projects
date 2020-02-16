@@ -1,6 +1,4 @@
-Clever Reproduce:
-<br>
-Main Idea:
+Main Idea(Clever Reproduce):
 <br>
 
 Partners:
