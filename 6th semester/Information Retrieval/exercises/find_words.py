@@ -1,3 +1,4 @@
+#exersice 4.9
 import sys
 import copy
 
