@@ -24,7 +24,7 @@ sec = '</font>'
 new_doc = doc[start_index+7:end_index]
 result_html = doc[:start_index+7]
 
-#find words and change their background-color
+#find worlds and change their background-color
 for w in worlds:
     s = 0
     l_doc = new_doc.lower()
