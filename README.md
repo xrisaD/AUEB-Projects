@@ -1,1 +1,2 @@
-# My Assignments at Athens University of Economics and Business
+# Athens University of Economics and Business
+# My Assignments
