@@ -59,3 +59,11 @@ for i in range(1,50):
 
 plt.plot(x, y,'--')
 plt.show()
+
+#Compute k
+y2 = []
+for w,r in zip(sorted_words,range(1,len(count))):
+  ena = int(w[1])
+  y2.append(ena*r)
+plt.plot(range(1,len(count)), y2)
+plt.show()
