@@ -45,7 +45,7 @@ print("Unique words: "+ str(len(count)))
 freqs = []
 for w in count.most_common(50):
   freqs.append(w[1])
-plt.plot(freqs, range(1,51))
+plt.plot(range(1,51), freqs)
 plt.show()
 
 #athroistiki pithanothta emfanisis
