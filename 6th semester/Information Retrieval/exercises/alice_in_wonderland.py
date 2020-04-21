@@ -1,7 +1,6 @@
 #9.4 Zip's Law Exercise
 #!pip install -U nltk
 
-#download book: Alice in Wonderland
 import nltk
 nltk.download('gutenberg')
 from nltk.corpus import gutenberg
@@ -13,6 +12,7 @@ import matplotlib.pyplot as plt
 #Tokenization
 whitespace_wt = WhitespaceTokenizer()
 
+#download book: Alice in Wonderland
 alice = whitespace_wt.tokenize(nltk.corpus.gutenberg.raw('carroll-alice.txt'))
 
 #find more freq words
