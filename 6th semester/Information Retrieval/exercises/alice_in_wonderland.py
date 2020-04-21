@@ -15,7 +15,7 @@ whitespace_wt = WhitespaceTokenizer()
 #download book: Alice in Wonderland
 alice = whitespace_wt.tokenize(nltk.corpus.gutenberg.raw('carroll-alice.txt'))
 
-#find more freq words
+#find freq words
 count = nltk.FreqDist(alice)
 #create rank
 sorted_words = sorted([(word,count[word]) for word in count],key=lambda x: x[::-1], reverse=True)
