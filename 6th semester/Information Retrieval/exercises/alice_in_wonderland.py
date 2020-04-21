@@ -48,6 +48,7 @@ for w in count.most_common(50):
 plt.plot(freqs, range(1,51))
 plt.show()
 
+#athroistiki pithanothta emfanisis
 x = [] 
 y = []
 x.append(freqs[0])
