@@ -1,4 +1,4 @@
-#9.4 i)
+#9.4 Zip's Law Exercise
 #!pip install -U nltk
 
 #download book: Alice in Wonderland
@@ -6,8 +6,14 @@ import nltk
 nltk.download('gutenberg')
 from nltk.corpus import gutenberg
 from nltk.text import Text
+from nltk.tokenize import WhitespaceTokenizer
 from pprint import pprint
-alice = Text(nltk.corpus.gutenberg.words('carroll-alice.txt'))
+import matplotlib.pyplot as plt
+
+#Tokenization
+whitespace_wt = WhitespaceTokenizer()
+
+alice = whitespace_wt.tokenize(nltk.corpus.gutenberg.raw('carroll-alice.txt'))
 
 #find more freq words
 count = nltk.FreqDist(alice)
@@ -30,14 +36,25 @@ k = count.most_common(1)[0][1]
 thres = 100
 sum = 0
 for w in allWords:
-    print(" Word: " + w[0] + " Frequency: " + str(w[1]) + " Rank: " + str(ranks[w[0]]) + " Probability: "+ str(w[1]/len(alice)) + " Rank*Prob = "+ str(rank*(w[1]/len(alice))))
-    #check Zip's Law
-    print(str(k/ranks[w[0]]))
-    if(k/ranks[w[0]] > w[1] - thres and  k/ranks[w[0]]**m < w[1] + thres):
-      sum+=1
-print("Sum of  words: "+ str(len(alice)))
+    print(" Word: " + w[0] + " Frequency: " + str(w[1]) + " Rank: " + str(ranks[w[0]]) + " Probability: "+ str(w[1]/len(alice)) + " Rank*Prob = "+ str(ranks[w[0]]*(w[1]/len(alice))))
+len_alice = len(alice)
+print("Sum of  words: "+ str(len_alice))
 print("Unique words: "+ str(len(count)))
-if(sum==50):
-  print("Yes")
-else:
-  print("No")
+
+#compute f = k*r^m
+freqs = []
+for w in count.most_common(50):
+  freqs.append(w[1])
+plt.plot(freqs, range(1,51))
+plt.show()
+
+x = [] 
+y = []
+x.append(freqs[0])
+y.append((x[0]/len_alice)*100)
+for i in range(1,50):
+  x.append(x[i-1]+freqs[i])
+  y.append((x[i]/len_alice)*100)
+
+plt.plot(x, y,'--')
+plt.show()
