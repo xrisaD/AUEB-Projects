@@ -66,3 +66,12 @@ for w,r in zip(sorted_words,range(1,len(count))):
   y2.append(int(w[1])*r)
 plt.plot(range(1,len(count)), y2)
 plt.show()
+
+#Epalitheusi nomou Zipf
+log_freqs = []
+rs = []
+for i in range(1,len(freqs)):
+  log_freqs.append(math.log(freqs[i-1],10))
+  rs.append(math.log(i,10))
+plt.plot(rs, log_freqs)
+plt.show() 
