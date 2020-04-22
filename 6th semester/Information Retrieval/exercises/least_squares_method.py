@@ -11,7 +11,7 @@ with open('songs_frequency.txt', 'r') as file:
     data = file.read().replace('\n', '')
 
 # general: Y = m*X + c
-# Zip's Law: Y=logk, X=logr c=logf
+# Zip's Law: Y=logr, X=logf c=logk
 
 X = [math.log(int(x),10) for x in data.split()]
 Y = [math.log(i,10) for i in  range(1,len(X)+1)]
@@ -30,15 +30,15 @@ for i in range(len(X)):
     numerator += (X[i] - X_mean)*(Y[i] - Y_mean)
     denominator += (X[i] - X_mean)**2
 m = num / den
-logf = Y_mean - m*X_mean
+logk = Y_mean - m*X_mean
 
 print("m = ",m)
-print("logf = ", logf)
+print("logk = ", logk)
 
 # line
 Y_new = []
 for x in X:
-  Y_new.append(m*x+logf)
+  Y_new.append(m*x+logk)
 
 plt.scatter(X, Y)
 plt.scatter(X, Y_new, color='red')
