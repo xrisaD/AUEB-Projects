@@ -1,1 +1,1 @@
-Information retrieval system using Apache Lucene and Synonym Extension with WordNet
+Information retrieval system using Apache Lucene and synonym extension with WordNet
