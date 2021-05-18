@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Άσκηση 8</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/exercise8.css">
+        <script src="js/app.js"></script>
+        <script src="js/form.js"></script>
+        
+    </head>
+    <body class="page">
+
+        <header>
+            <h1>Άσκηση 8</h1> 
+            <p class="day">Καλημέρα!</p>
+            <button class="toggle">Toggle 🌞</button>
+        </header>
+        
+        <nav >
+            <ul class='menu'>
+                <li><a href="index.html">Τεχνητή Νοημοσύνη</a></li>
+                <li><a href="main_content.html"> Μηχανική Μάθηση και Βαθιά Μάθηση </a></li>
+                <li><a href="bert.html"> BERT</a></li>
+                <li><a href="form.html"> Εγγραφή</a></li>
+            </ul>
+        </nav>
+        
+        <aside>
+            <ul>
+                <li>"Robots are not going to replace humans, they are going to make their jobs much more humane. Difficult, demeaning, demanding, dangerous, dull – these are the jobs robots will be taking." Sabine Hauert, Co-founder of Robohub.org</li>
+                <li>"The coming era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love." Amit Ray, Pioneer of Compassionate AI Movement.</li>
+                <li>"As more and more artificial intelligence is entering into the world, more and more emotional intelligence must enter into leadership." Amit Ray, Famous AI Scientist, Author of Compassionate Artificial Intelligence </li>
+            </ul>
+        </aside>
+
+        <main class='container'> 
+            <section>
+                <h2>Κάνε τώρα εγγραφή!😊</h2>
+                
+                <form action="#">
+                    <fieldset>
+                        <legend>Στοιχεία Σύνδεσης:</legend>
+  
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required autocomplete="username"><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required autocomplete="email"><br><br>
+
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required><i class="fa fa-eye" id="eye" onmousedown="mouseDown()" onmouseup="mouseUp()"></i><br><br>
+                        
+                        <label for="confirm_password">Confirm Password:</label><br>
+                        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+  
+                    </fieldset>
+                    <fieldset>
+                      <legend>Προσωπικά Στοιχεία:</legend>
+
+                      <label for="fname">Όνοματεπώνυμο:</label><br>
+                      <input type="text" id="fname" name="fname" required autocomplete="name"><br><br>
+
+                      <label for="birthday">Ημερομηνία Γέννησης:</label><br>
+                      <input type="date" id="birthday" name="birthday" required><br><br>
+
+                      <label for="address">Διεύθνση:</label><br>
+                      <input type="text" id="address" name="address" pattern="[A-Za-z]+ [0-9]+ [0-9]+" required><br><br>
+
+                      <label for="country">Χώρα:</label><br>
+                      <input type="text" id="country" name="country"  list="countries" required autocomplete="country-name"><br><br>
+
+                      <label for="phone1">Κινητό:</label><br>
+                      <input type="tel" id="phone1" name="phone1" required autocomplete="tel"><br><br>
+
+                      <label for="phone2">Σταθερό:</label><br>
+                      <input type="tel" id="phone2" name="phone2">
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mini-Ερωτηματολόγιο:</legend>
+                        
+                        <!-- 1 -->
+                        <label for="q1">Πόσο σου αρέσει από το 1 εως το 5 η Τεχνητή Νοημοσύνη;</label>
+                        <select id="q1" name="q1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select><br><br>
+                        
+                        <!-- 2 -->
+                        <label for="q2">Πόσο σου αρέσει από το 1 εως το 5 η Μηχανική Μάθηση/Βαθιά Μάθηση;</label>
+                        <select id="q2" name="q2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select><br><br>
+                        
+                        <!-- 3 -->
+                        <p>Με τι από τα παρακάτω έχει ασχοληθεί;</p>
+                        <input type="checkbox" id="machine_learning" name="machine_learning" value="machine_learning">
+                        <label for="machine_learning"> Μηχανική Μάθηση</label><br>
+                        <input type="checkbox" id="deep_learning" name="deep_learning" value="deep_learning">
+                        <label for="deep_learning"> Βαθιά Μάθηση </label><br><br>
+                        
+                        <!-- 4 -->
+                        <p>Τι σε ενθουσιάζει περισσότερο;</p>
+                        <input type="radio" id="machine_learning_radio" name="how" value="machine_learning_radio" checked="checked">
+                        <label for="machine_learning_radio">Μηχανική Μάθηση</label><br>
+                        <input type="radio" id="deep_learning_radio" name="how" value="deep_learning_radio" checked="checked">
+                        <label for="deep_learning_radio">Βαθιά Μάθηση</label><br>
+                        <input type="radio" id="both" name="how" value="both" checked="checked">
+                        <label for="both"> Και τα δύο!</label><br><br>
+                        
+                        <!-- 5 -->
+                        <label for="q5">Πως φαντάζεσαι τον κόσμο στο μέλλον; Πιστεύεις θα αυξηθεί η χρήση τεχνητής νοημοσύνης;</label><br>
+                        <textarea id="q5" name="q5" rows="10" cols="50"></textarea>
+                        <br><br>
+                        
+                        <!-- 6 -->
+                        <label for="q6">Περιέγραψε μου σύντομα ένα project τεχνητής νοημοσύνης με το οποίο έχεις ασχοληθεί!</label><br>
+                        <textarea id="q6" name="q6" rows="10" cols="50"></textarea><br><br>
+                        
+                        <!-- 7 -->
+                        <p>Πιστεύεις η χρήση τεχνητής νοημοσύνης θα βοηθήσει την ανθρωπότητα;</p>
+                        <input type="radio" id="yes" name="yes" value="yes">
+                        <label for="yes">Ναι</label><br>
+                        <input type="radio" id="no" name="no" value="no">
+                        <label for="no">Όχι</label><br><br>
+                        
+                        <!-- 8 -->
+                        <label for="q8"> Αν ναι με ποιους τρόπους;/Αν όχι, γιατί; </label><br>
+                        <textarea id="q8" name="q8" rows="10" cols="50"></textarea><br><br>
+                        
+                        <!-- 9 -->
+                        <label for="q10">Ποια εφαρμογή της σου φαίνεται πιο ενδιαφέρον; Θα ήθελες να την υλοποιήσεις; </label><br>
+                        <textarea id="q10" name="q10" rows="10" cols="50"></textarea><br><br>
+
+                        <!-- 10 -->
+                        <label for="experience">Πόσα χρόνια εμπειρίας έχεις στον τομέα;</label>
+                        <input type="range" list="experiencedata" id="experience" name="experience" min="0" max="20"/>
+
+                      </fieldset>
+
+                    <input type="submit" value="Submit">
+                  </form>
+                
+                  <datalist id="countries">
+                    <option>Ελλάδα</option>
+                    <option>Κύπρος</option>
+                    <option>Άλλη</option>
+                  </datalist>
+                  
+                  <datalist id="experiencedata">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                  </datalist>
+            </section> 
+          
+        </main>
+
+        <footer>
+            <p>Δημιουργός: Χρυσούλα Δικονιμάκη</p>
+            <p>Επικοινωνία: p3170039@aueb.gr</p>
+        </footer>
+    </body>
+</html>
