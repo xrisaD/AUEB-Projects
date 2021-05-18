@@ -1,0 +1,89 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Junicode.ttf);
+}
+
+body{
+    color:white;
+    font-family: myFirstFont;
+    background-color: cornsilk;
+    font-size: 20px;
+}
+
+.page {
+    display: grid;
+   
+    height: 100%;
+    grid-template-areas:
+    'header  header '
+    'nav nav'
+    'main aside'
+    'footer  footer';
+    grid-gap: 10px;
+  }
+
+header, footer, aside, section{
+    padding: 40px;
+}
+
+header, footer, nav, aside, main{
+    border-radius: 5px;
+    border: 60px;
+}
+header {
+    grid-area: header;
+    background-color: #013220;
+}
+
+footer { 
+    grid-area: footer; 
+    background-color: #013220;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #013220;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #013220;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 5px 5px;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    grid-area: main;
+    background-color: #c64756;
+    display: flex;
+    flex-direction: row;
+}
+
+.page > nav a{
+    color:white;
+    text-decoration: none;
+    padding:10px;
+}
+
+.page > nav a:hover{
+    color:white;
+    background: #c64756;
+    border-radius: 5px;
+    border: 60px;
+}
+
