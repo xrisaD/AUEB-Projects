@@ -1,0 +1,76 @@
+body {
+    background-image: url("../images/flowers.jpeg");
+    background-repeat: repeat-x;
+    background-color: rgb(177, 55, 126);
+    color: rgb(247, 242, 247);
+}
+
+article::first-letter, p::first-letter{
+    font-size: 20px;
+}
+
+b {
+ color:rgb(190, 241, 161);
+ font-weight: bold;
+ font-style: italic;
+ font-variant-caps: all-small-caps;
+}
+
+header, p, dl{
+    font-size: 20px;
+}
+
+
+a {
+    outline: none;
+    color:cornsilk;
+}
+
+a:link {
+    color:rgb(189, 250, 77);
+}
+
+a:visited {
+    color:rgb(213, 241, 160);
+}
+
+a:hover {
+    color: pink;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+a:active {
+    color: rgb(99, 4, 75);
+}
+
+main{
+    background-color: rgb(177, 55, 126);
+    margin: 5% 10% 5% 10%;
+    padding: 60px;
+}
+
+.wide{
+    width:70%;
+}
+.nonwide{
+    width:45%;
+}
+
+img{
+    float:inline-start;
+    height: auto;
+}
+
+footer{
+    padding:50px;
+    margin:0% 25% 0% 25%;
+    background-color: rgb(24, 85, 109);
+    border-radius: 12px;
+    opacity: 0.9;
+}
+
+#name{
+    font-family: 'Brush Script MT', cursive;
+}
+
