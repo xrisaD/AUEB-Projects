@@ -1,0 +1,155 @@
+body{
+    color:white;
+    font-family: myFirstFont;
+    background-color: cornsilk;
+}
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color:  #c64756;
+    transition-duration: 0.2s;
+    width: 10%;
+    border-radius: 40px;
+    color:white;
+    border:none;
+    font-size: medium;
+}
+button:hover {
+    opacity: 50%;
+}
+
+header, footer, aside, section{
+    padding: 1%;
+}
+
+header, footer, nav, aside, main{
+    border-radius: 5px;
+    border: 1px;
+}
+header {
+    grid-area: header;
+    background-color: #013220;
+}
+
+footer { 
+    grid-area: footer; 
+    background-color: #013220;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #013220;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #013220;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1%
+}
+.menu li a {
+    display: block;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    grid-area: main;
+    background-color: #c64756;
+    display: flex;
+    flex-direction: column;
+}
+
+.page > nav a{
+    color:white;
+    text-decoration: none;
+}
+
+.page > nav a:hover{
+    color:white;
+    background: #c64756;
+    border-radius: 5px;
+    border: 1px;
+}
+
+img{
+    max-width: 100%;
+    float: left;
+    margin:1%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Junicode.ttf);
+}
+
+/* Exercise 5 */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .page{
+        grid-template-areas:
+        'header header'
+        'nav nav'
+        'main aside'
+        'footer footer';
+        grid-template-columns: 5fr 1fr;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .page{
+        grid-template-areas:
+        'header header'
+        'nav nav'
+        'main aside'
+        'footer footer';
+        grid-template-columns: 5fr 1fr;
+    }
+    .menu, .container {
+        flex-direction: row;
+    }
+    
+}
+/* Exercise 5 */
+
+/* Exercise 7 */
+.day {
+    position: relative;
+    animation: mymove 10s infinite;
+    font-size: large;
+  }
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+/* Exercise 7 */
