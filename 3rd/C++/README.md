@@ -26,3 +26,8 @@ Run with command arguments: filter -f linear 2 2 2 0 0 0 Image05.ppm
 After Linear Filter:
 
 ![alt text](img/linear.PNG)
+
+***
+#### Team members: 
+[Konstantinos Konstantopoulos](https://github.com/ntinouldinho)
+
