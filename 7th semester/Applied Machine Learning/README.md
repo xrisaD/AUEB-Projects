@@ -3,7 +3,7 @@
 Explored and extracted data from the official FEC website which contains information on USA's political party incomes and transactions conserning the presidential election.
 
 # Assignment 2
-#### Exploring the Rosetta Stone of Human Capital
+#### Exploring [the Rosetta Stone of Human Capital](https://www.cgdev.org/publication/rosetta-stone-human-capital)
 
 
 # Assignment 3
