@@ -1,5 +1,6 @@
-Main Idea(Clever Reproduce):
-<br>
+# Timetable Scheduling
+Used Genetic Algorithm to create a schedule. <br>
+# Main Idea (Clever Reproduce):
 ![alt text](newIntersectionPoints.PNG)
 ---
 Partners:
